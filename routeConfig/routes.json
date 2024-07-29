@@ -1,0 +1,25 @@
+{
+	"routes": [
+		{
+			"route": "/question/v1/create",
+			"method": "POST",
+			"returnData": {
+                "id": "api.question.create",
+                "ver": "3.0",
+                "ts": "2021-02-02T19:28:24ZZ",
+                "params": {
+                  "resmsgid": "8b75d237-1028-4e38-a94a-9ff4ca784d76",
+                  "msgid": null,
+                  "err": null,
+                  "status": "successful",
+                  "errmsg": null
+                },
+                "responseCode": "OK",
+                "result": {
+                  "identifier": "do_11320791330308096015",
+                  "versionKey": "1612294104382"
+                }
+            }
+		}
+	]
+}
