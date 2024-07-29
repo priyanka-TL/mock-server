@@ -12,9 +12,23 @@ const routesConfigPath = path.join(__dirname, 'routeConfig', 'routes.json');
 const routesConfig = JSON.parse(fs.readFileSync(routesConfigPath, 'utf8'));
 
 // Utility function to find route config by method and path
-const findRouteConfig = (method, path) => {
-    return routesConfig.routes.find(route => route.route === path && route.method === method);
+const findRouteConfig = (method, requestPath) => {
+    for (const route of routesConfig.routes) {
+        if (route.method === method) {
+            const routePattern = route.route
+                .replace(/:\w+/g, '([^/]+)') // Replace :param with a capturing group
+                .replace(/\//g, '\\/'); // Escape slashes
+            const regex = new RegExp(`^${routePattern}$`);
+            
+            // Test if the request path matches the route pattern
+            if (regex.test(requestPath)) {
+                return route;
+            }
+        }
+    }
+    return null; // Return null if no route matches
 };
+
 
 // Handle requests based on routes configuration
 app.use((req, res) => {

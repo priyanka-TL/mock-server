@@ -1,25 +1,252 @@
 {
-	"routes": [
-		{
-			"route": "/question/v1/create",
-			"method": "POST",
-			"returnData": {
-                "id": "api.question.create",
-                "ver": "3.0",
-                "ts": "2021-02-02T19:28:24ZZ",
-                "params": {
-                  "resmsgid": "8b75d237-1028-4e38-a94a-9ff4ca784d76",
-                  "msgid": null,
-                  "err": null,
-                  "status": "successful",
-                  "errmsg": null
-                },
-                "responseCode": "OK",
-                "result": {
-                  "identifier": "do_11320791330308096015",
-                  "versionKey": "1612294104382"
-                }
-            }
-		}
-	]
+  "routes": [
+    {
+      "route": "/question/v1/create",
+      "method": "POST",
+      "returnData": {
+        "id": "api.question.create",
+        "ver": "3.0",
+        "ts": "2021-02-02T19:28:24ZZ",
+        "params": {
+          "resmsgid": "8b75d237-1028-4e38-a94a-9ff4ca784d76",
+          "msgid": null,
+          "err": null,
+          "status": "successful",
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "identifier": "do_11320791330308096015",
+          "versionKey": "1612294104382"
+        }
+      }
+    },
+    {
+      "route": "/questionset/v1/create",
+      "method": "POST",
+      "returnData": {
+        "id": "api.questionset.create",
+        "ver": "3.0",
+        "ts": "2021-02-03T08:17:28ZZ",
+        "params": {
+          "resmsgid": "4c45a5e2-c3b4-47c1-95a2-3a31f7e7c1ca",
+          "msgid": null,
+          "err": null,
+          "status": "successful",
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "identifier": "do_113208291312132096114",
+          "versionKey": "1612340248069"
+        }
+      }
+    },
+    {
+      "route": "/questionset/v1/hierarchy/update",
+      "method": "POST",
+      "returnData": {
+        "id": "api.questionset.hierarchy.update",
+        "ver": "3.0",
+        "ts": "2021-02-03T13:06:12ZZ",
+        "params": {
+          "resmsgid": "221f9cdb-c220-4d3f-a579-4e7b82facf89",
+          "msgid": null,
+          "err": null,
+          "status": "successful",
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "identifier": "do_113208431570984960123",
+          "identifiers": {
+            "section-1": "do_113208433229889536126",
+            "question-1": "do_113208433229873152124"
+          }
+        }
+      }
+    },
+    {
+      "route": "/questionset/v1/publish/:id",
+      "method": "POST",
+      "returnData": {
+        "id": "api.questionset.publish",
+        "ver": "3.0",
+        "ts": "2021-02-03T09:39:14ZZ",
+        "params": {
+          "resmsgid": "62f7e310-39e1-4287-bc9f-f8e6ac5f5bd3",
+          "msgid": null,
+          "err": null,
+          "status": "successful",
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "message": "Question is successfully sent for Publish",
+          "identifier": "do_113208323801554944120"
+        }
+      }
+    },
+    {
+      "route": "/questionset/v1/hierarchy/:id",
+      "method": "POST",
+      "returnData": {
+        "id": "api.questionset.hierarchy.get",
+        "ver": "3.0",
+        "ts": "2021-02-03T13:55:21ZZ",
+        "params": {
+          "resmsgid": "b810c4fd-231e-4b26-9be6-6345c49bde14",
+          "msgid": null,
+          "err": null,
+          "status": "successful",
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "questionSet": {
+            "code": "finemanfine",
+            "allowSkip": "Yes",
+            "containsUserData": "No",
+            "description": "updated_code_of_root",
+            "language": [
+              "English"
+            ],
+            "mimeType": "application/vnd.sunbird.questionset",
+            "showHints": "No",
+            "createdOn": "2021-02-03T13:02:49.507+0000",
+            "objectType": "QuestionSet",
+            "primaryCategory": "Practice Question Set",
+            "children": [
+              {
+                "parent": "do_113208431570984960123",
+                "code": "QS_Visibility_Parent",
+                "allowSkip": "Yes",
+                "containsUserData": "No",
+                "description": "QS_Visibility_Parent",
+                "language": [
+                  "English"
+                ],
+                "mimeType": "application/vnd.sunbird.questionset",
+                "showHints": "No",
+                "createdOn": "2021-02-03T13:47:27.074+0000",
+                "objectType": "QuestionSet",
+                "primaryCategory": "Practice Question Set",
+                "children": [
+                  {
+                    "parent": "do_113208453505630208144",
+                    "code": "Q_Visibility_Parent",
+                    "language": [
+                      "English"
+                    ],
+                    "mimeType": "application/vnd.sunbird.question",
+                    "createdOn": "2021-02-03T13:47:27.072+0000",
+                    "objectType": "Question",
+                    "primaryCategory": "Multiple Choice Question",
+                    "contentDisposition": "inline",
+                    "lastUpdatedOn": "2021-02-03T13:47:27.072+0000",
+                    "contentEncoding": "gzip",
+                    "showSolutions": "No",
+                    "allowAnonymousAccess": "Yes",
+                    "identifier": "do_113208453505613824142",
+                    "lastStatusChangedOn": "2021-02-03T13:47:27.072+0000",
+                    "visibility": "Parent",
+                    "showTimer": "No",
+                    "index": 1,
+                    "qType": "MCQ",
+                    "languageCode": [
+                      "en"
+                    ],
+                    "version": 1,
+                    "versionKey": "1612360047074",
+                    "showFeedback": "No",
+                    "license": "CC BY 4.0",
+                    "depth": 2,
+                    "compatibilityLevel": 4,
+                    "name": "MCQ",
+                    "status": "Draft"
+                  }
+                ],
+                "contentDisposition": "inline",
+                "lastUpdatedOn": "2021-02-03T13:47:27.074+0000",
+                "contentEncoding": "gzip",
+                "showSolutions": "No",
+                "allowAnonymousAccess": "Yes",
+                "identifier": "do_113208453505630208144",
+                "lastStatusChangedOn": "2021-02-03T13:47:27.074+0000",
+                "requiresSubmit": "No",
+                "visibility": "Parent",
+                "showTimer": "No",
+                "index": 1,
+                "setType": "materialised",
+                "languageCode": [
+                  "en"
+                ],
+                "version": 1,
+                "versionKey": "1612360047074",
+                "showFeedback": "No",
+                "license": "CC BY 4.0",
+                "depth": 1,
+                "compatibilityLevel": 4,
+                "name": "QS_Visibility_Parent",
+                "navigationMode": "non-linear",
+                "shuffle": "Yes",
+                "status": "Draft"
+              }
+            ],
+            "contentDisposition": "inline",
+            "lastUpdatedOn": "2021-02-03T13:47:27.108+0000",
+            "contentEncoding": "gzip",
+            "showSolutions": "Yes",
+            "allowAnonymousAccess": "Yes",
+            "identifier": "do_113208431570984960123",
+            "lastStatusChangedOn": "2021-02-03T13:02:49.507+0000",
+            "requiresSubmit": "Yes",
+            "visibility": "Default",
+            "showTimer": "No",
+            "summaryType": "Complete",
+            "consumerId": "fa13b438-8a3d-41b1-8278-33b0c50210e4",
+            "childNodes": [
+              "do_113208453505613824142",
+              "do_113208453505630208144"
+            ],
+            "setType": "materialised",
+            "languageCode": [
+              "en"
+            ],
+            "version": 1,
+            "versionKey": "1612360047108",
+            "showFeedback": "Yes",
+            "license": "CC BY 4.0",
+            "depth": 0,
+            "compatibilityLevel": 4,
+            "name": "Test Question Set",
+            "navigationMode": "linear",
+            "shuffle": "Yes",
+            "status": "Draft"
+          }
+        }
+      }
+    },
+    {
+      "route": "/question/v1/publish/:id",
+      "method": "POST",
+      "returnData": {
+        "id": "api.question.publish",
+        "ver": "3.0",
+        "ts": "2021-02-02T20:15:02ZZ",
+        "params": {
+          "resmsgid": "9c64cc9c-bed5-44c7-85bf-4918c3a42f58",
+          "msgid": null,
+          "err": null,
+          "status": "successful",
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "message": "Question is successfully sent for Publish",
+          "identifier": "do_113207931921555456111"
+        }
+      }
+    }
+  ]
 }
