@@ -247,6 +247,806 @@
           "identifier": "do_113207931921555456111"
         }
       }
+    },
+    {
+      "route": "/api/program/v1/create",
+      "method": "POST",
+      "returnData": {
+        "id": "api.program.create",
+        "ts": "2022-12-20T09:24:07.416Z",
+        "params": {
+          "resmsgid": "0db28f81-8048-11ed-be8b-9962d8844469",
+          "msgid": "0db28f80-8048-11ed-be8b-9962d8844469",
+          "status": "successful",
+          "err": null,
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "program_id": "0d8abc30-8048-11ed-be8b-9962d8844469"
+        }
+      }
+    },
+    {
+      "route": "/api/program/v1/update",
+      "method": "POST",
+      "returnData": {
+        "id": "api.program.update",
+        "ts": "2022-12-20T09:58:55.641Z",
+        "params": {
+          "resmsgid": "ea606891-804c-11ed-be8b-9962d8844469",
+          "msgid": "ea606890-804c-11ed-be8b-9962d8844469",
+          "status": "successful",
+          "err": null,
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "program_id": "a043dc40-3497-11eb-9c32-15914148e3ce"
+        }
+      }
+    },
+    {
+      "route": "/api/program/v1/publish",
+      "method": "POST",
+      "returnData": {
+        "id": "api.v1.publish",
+        "ver": "1.0",
+        "ts": "2022-12-20T09:32:09.710Z",
+        "params": {
+          "resmsgid": "2d2ac8e0-8049-11ed-be8b-9962d8844469",
+          "msgid": "2c4c4fc0-8049-11ed-be8b-9962d8844469",
+          "status": "successful",
+          "err": null,
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "program_id": "a043dc40-3497-11eb-9c32-15914148e3ce",
+          "afterPublishResponse": {
+            "nomination": {
+              "error": null,
+              "result": {
+                "program_id": "a043dc40-3497-11eb-9c32-15914148e3ce",
+                "user_id": "48dc0e70-2775-474b-9b78-def27d047836",
+                "organisation_id": "e0ab89f4-0fcb-47ea-9b70-3ed0f12b1b7a",
+                "status": "Approved",
+                "collection_ids": [
+                  "do_11369316334888550414055",
+                  "do_11369316334883635214053",
+                  "do_11369316334885273614054"
+                ],
+                "content_types": [
+                  "Course Assessment",
+                  "eTextbook",
+                  "Explanation Content",
+                  "Learning Resource",
+                  "Practice Question Set",
+                  "Teacher Resource"
+                ]
+              }
+            },
+            "userMapping": {}
+          }
+        }
+      }
+    },
+    {
+      "route": "/api/program/v1/read/:id",
+      "method": "GEY",
+      "returnData": {
+        "id": "api.program.read",
+        "ts": "2022-12-20T09:35:25.751Z",
+        "params": {
+          "resmsgid": "a2044471-8049-11ed-be8b-9962d8844469",
+          "msgid": "a2044470-8049-11ed-be8b-9962d8844469",
+          "status": "successful",
+          "err": null,
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "program_id": "c43f7790-0a2a-11eb-a2e9-4fe29a51bb70",
+          "name": "DOCK_ISSUE_DOUBLE",
+          "description": "SAMPLE",
+          "type": "public",
+          "collection_ids": [
+            "do_113108644711645184186",
+            "do_11312258137206784011"
+          ],
+          "content_types": [
+            "Teacher Resource"
+          ],
+          "target_collection_category": null,
+          "targetprimarycategories": null,
+          "targetprimarycategorynames": null,
+          "target_type": "collections",
+          "startdate": "2020-10-15T09:50:51.646Z",
+          "enddate": "2021-02-25T18:30:00.000Z",
+          "nomination_enddate": "2020-12-31T18:30:00.000Z",
+          "shortlisting_enddate": "2021-01-08T18:30:00.000Z",
+          "content_submission_enddate": "2021-02-06T18:30:00.000Z",
+          "image": null,
+          "status": "Live",
+          "slug": "sunbird",
+          "config": {
+            "board": "CBSE",
+            "roles": [
+              {
+                "id": 1,
+                "name": "CONTRIBUTOR",
+                "tabs": [
+                  1
+                ],
+                "default": true,
+                "defaultTab": 1
+              },
+              {
+                "id": 2,
+                "name": "REVIEWER",
+                "tabs": [
+                  2
+                ],
+                "defaultTab": 2
+              }
+            ],
+            "header": {
+              "id": "ng.sunbird.header",
+              "ver": "1.0",
+              "data": {},
+              "author": "Venkat",
+              "compId": "headerComp",
+              "config": {
+                "tabs": [
+                  {
+                    "index": 1,
+                    "label": "Contribute",
+                    "onClick": "collectionComponent"
+                  },
+                  {
+                    "index": 2,
+                    "label": "Review",
+                    "onClick": "collectionComponent"
+                  },
+                  {
+                    "index": 3,
+                    "label": "Dashboard",
+                    "onClick": "dashboardComponent"
+                  }
+                ]
+              },
+              "description": "",
+              "publishedDate": ""
+            },
+            "medium": [
+              "English"
+            ],
+            "actions": {
+              "showCert": {
+                "roles": [
+                  4
+                ]
+              },
+              "showEdit": {
+                "roles": [
+                  1
+                ]
+              },
+              "showSave": {
+                "roles": [
+                  1
+                ]
+              },
+              "showSubmit": {
+                "roles": [
+                  1
+                ]
+              },
+              "showFilters": {
+                "roles": [
+                  1,
+                  2,
+                  3
+                ]
+              },
+              "showPublish": {
+                "roles": [
+                  2
+                ]
+              },
+              "showRejected": {
+                "roles": [
+                  1
+                ]
+              },
+              "showDashboard": {
+                "roles": [
+                  3
+                ]
+              },
+              "showChangeFile": {
+                "roles": [
+                  1
+                ]
+              },
+              "showCountPanel": {
+                "roles": [
+                  1,
+                  2
+                ]
+              },
+              "showAddResource": {
+                "roles": [
+                  1
+                ]
+              },
+              "showCreatorView": {
+                "roles": [
+                  1
+                ]
+              },
+              "showUnderReview": {
+                "roles": [
+                  1
+                ]
+              },
+              "showUpforReview": {
+                "roles": [
+                  2
+                ]
+              },
+              "showContribution": {
+                "roles": [
+                  1
+                ]
+              },
+              "showEditResource": {
+                "roles": [
+                  1
+                ]
+              },
+              "showMoveResource": {
+                "roles": [
+                  1
+                ]
+              },
+              "showReviewerView": {
+                "roles": [
+                  2
+                ]
+              },
+              "showCreateQuestion": {
+                "roles": [
+                  1
+                ]
+              },
+              "showDeleteQuestion": {
+                "roles": [
+                  1
+                ]
+              },
+              "showDeleteResource": {
+                "roles": [
+                  1
+                ]
+              },
+              "showMyContribution": {
+                "roles": [
+                  1
+                ]
+              },
+              "showRequestChanges": {
+                "roles": [
+                  2
+                ]
+              },
+              "showAawaitingReview": {
+                "roles": [
+                  2
+                ]
+              },
+              "showPreviewResource": {
+                "roles": [
+                  2
+                ]
+              },
+              "showTotalUnderReview": {
+                "roles": [
+                  2
+                ]
+              },
+              "showTotalContribution": {
+                "roles": [
+                  1
+                ]
+              }
+            },
+            "subject": [
+              "Hindi",
+              "Science"
+            ],
+            "_comments": "",
+            "framework": "ekstep_ncert_k-12",
+            "components": [
+              {
+                "id": "ng.sunbird.collection",
+                "ver": "1.0",
+                "data": {},
+                "author": "Venkat",
+                "compId": "collectionComponent",
+                "config": {
+                  "status": [
+                    "Draft",
+                    "Live"
+                  ],
+                  "filters": {
+                    "explicit": [
+                      {
+                        "code": "gradeLevel",
+                        "label": "Class",
+                        "range": [
+                          "Kindergarten",
+                          "Grade 1",
+                          "Grade 2",
+                          "Grade 3"
+                        ],
+                        "visibility": true,
+                        "multiselect": false,
+                        "defaultValue": [
+                          "Kindergarten",
+                          "Grade 1"
+                        ]
+                      },
+                      {
+                        "code": "subject",
+                        "label": "Subject",
+                        "range": [
+                          "English",
+                          "Mathematics",
+                          "Hindi"
+                        ],
+                        "visibility": true,
+                        "multiselect": false,
+                        "defaultValue": [
+                          "English"
+                        ]
+                      }
+                    ],
+                    "implicit": [
+                      {
+                        "code": "framework",
+                        "label": "Framework",
+                        "defaultValue": "ekstep_ncert_k-12"
+                      },
+                      {
+                        "code": "board",
+                        "label": "Board",
+                        "defaultValue": "CBSE"
+                      },
+                      {
+                        "code": "medium",
+                        "label": "Medium",
+                        "defaultValue": [
+                          "English"
+                        ]
+                      }
+                    ]
+                  },
+                  "groupBy": {
+                    "value": "subject",
+                    "defaultValue": "subject"
+                  },
+                  "collectionList": [],
+                  "collectionType": "Textbook"
+                },
+                "description": "",
+                "publishedDate": ""
+              },
+              {
+                "id": "ng.sunbird.chapterList",
+                "ver": "1.0",
+                "data": {},
+                "author": "Kartheek",
+                "compId": "chapterListComponent",
+                "config": {
+                  "contentTypes": {
+                    "value": [],
+                    "defaultValue": [
+                      {
+                        "id": "vsaPracticeQuestionContent",
+                        "label": "Practice Sets",
+                        "onClick": "questionSetComponent",
+                        "metadata": {
+                          "name": "Practice QuestionSet",
+                          "marks": 5,
+                          "appIcon": "",
+                          "audience": [
+                            "Learner"
+                          ],
+                          "contentType": "PracticeQuestionSet",
+                          "description": "Practice QuestionSet",
+                          "resourceType": "Learn"
+                        },
+                        "mimeType": [
+                          "application/vnd.ekstep.ecml-archive"
+                        ],
+                        "questionCategories": [
+                          "vsa"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "description": "",
+                "publishedDate": ""
+              },
+              {
+                "id": "ng.sunbird.uploadComponent",
+                "ver": "1.0",
+                "data": {},
+                "author": "Kartheek",
+                "compId": "uploadContentComponent",
+                "config": {
+                  "tenantName": "SunbirdEd",
+                  "filesConfig": {
+                    "size": "50",
+                    "accepted": "pdf, mp4, webm, h5p, epub"
+                  },
+                  "formConfiguration": [
+                    {
+                      "code": "learningOutcome",
+                      "name": "LearningOutcome",
+                      "label": "Learning Outcome",
+                      "visible": true,
+                      "dataType": "list",
+                      "editable": true,
+                      "required": false,
+                      "inputType": "multiselect",
+                      "description": "Learning Outcomes For The Content",
+                      "placeholder": "Select Learning Outcomes"
+                    },
+                    {
+                      "code": "attributions",
+                      "name": "Attributions",
+                      "label": "Attributions",
+                      "visible": true,
+                      "dataType": "list",
+                      "editable": true,
+                      "helpText": "If you have relied on another work to create this Content, provide the name of that creator and the source of that work.",
+                      "required": false,
+                      "inputType": "text",
+                      "description": "Enter Attributions",
+                      "placeholder": "Enter Attributions"
+                    },
+                    {
+                      "code": "copyright",
+                      "name": "Copyright",
+                      "label": "Copyright and Year",
+                      "visible": true,
+                      "dataType": "text",
+                      "editable": true,
+                      "helpText": "If you are an individual, creating original Content, you are the copyright holder. If you are creating Content on behalf of an organisation, the organisation may be the copyright holder. Please fill as <Name of copyright holder>, <Year of publication>",
+                      "required": true,
+                      "inputType": "text",
+                      "description": "Enter Copyright and Year",
+                      "placeholder": "Enter Copyright and Year"
+                    },
+                    {
+                      "code": "creator",
+                      "name": "Author",
+                      "label": "Author",
+                      "visible": true,
+                      "dataType": "text",
+                      "editable": true,
+                      "helpText": "Provide name of creator of this Content.",
+                      "required": true,
+                      "inputType": "text",
+                      "description": "Enter The Author Name",
+                      "placeholder": "Enter Author Name"
+                    },
+                    {
+                      "code": "license",
+                      "name": "License",
+                      "label": "License",
+                      "visible": true,
+                      "dataType": "list",
+                      "editable": true,
+                      "helpText": "Choose the most appropriate Creative Commons License for this Content",
+                      "required": true,
+                      "inputType": "select",
+                      "description": "License For The Content",
+                      "placeholder": "Select License"
+                    },
+                    {
+                      "code": "contentPolicyCheck",
+                      "name": "Content Policy Check",
+                      "visible": true,
+                      "dataType": "boolean",
+                      "editable": false,
+                      "required": true,
+                      "inputType": "checkbox"
+                    }
+                  ],
+                  "resourceTitleLength": "200"
+                },
+                "description": "",
+                "publishedDate": ""
+              },
+              {
+                "id": "ng.sunbird.practiceSetComponent",
+                "ver": "1.0",
+                "data": {},
+                "author": "Kartheek",
+                "compId": "practiceSetComponent",
+                "config": {
+                  "tenantName": "",
+                  "assetConfig": {
+                    "image": {
+                      "size": "50",
+                      "accepted": "jpeg, png, jpg"
+                    },
+                    "video": {
+                      "size": "50",
+                      "accepted": "pdf, mp4, webm, youtube"
+                    }
+                  },
+                  "solutionType": [
+                    "Video",
+                    "Text & image"
+                  ],
+                  "No of options": 4,
+                  "questionCategory": [
+                    "vsa",
+                    "sa",
+                    "ls",
+                    "mcq",
+                    "curiosity"
+                  ],
+                  "formConfiguration": [
+                    {
+                      "code": "learningOutcome",
+                      "name": "LearningOutcome",
+                      "label": "Learning Outcome",
+                      "visible": true,
+                      "dataType": "list",
+                      "editable": true,
+                      "required": false,
+                      "inputType": "multiselect",
+                      "description": "Learning Outcomes For The Content",
+                      "placeholder": "Select Learning Outcomes"
+                    },
+                    {
+                      "code": "attributions",
+                      "name": "Attributions",
+                      "label": "Attributions",
+                      "visible": true,
+                      "dataType": "list",
+                      "editable": true,
+                      "helpText": "If you have relied on another work to create this Content, provide the name of that creator and the source of that work.",
+                      "required": false,
+                      "inputType": "text",
+                      "description": "Enter Attributions",
+                      "placeholder": "Enter Attributions"
+                    },
+                    {
+                      "code": "copyright",
+                      "name": "Copyright",
+                      "label": "Copyright and Year",
+                      "visible": true,
+                      "dataType": "text",
+                      "editable": true,
+                      "helpText": "If you are an individual, creating original Content, you are the copyright holder. If you are creating Content on behalf of an organisation, the organisation may be the copyright holder. Please fill as <Name of copyright holder>, <Year of publication>",
+                      "required": true,
+                      "inputType": "text",
+                      "description": "Enter Copyright and Year",
+                      "placeholder": "Enter Copyright and Year"
+                    },
+                    {
+                      "code": "creator",
+                      "name": "Author",
+                      "label": "Author",
+                      "visible": true,
+                      "dataType": "text",
+                      "editable": true,
+                      "helpText": "Provide name of creator of this Content.",
+                      "required": true,
+                      "inputType": "text",
+                      "description": "Enter The Author Name",
+                      "placeholder": "Enter Author Name"
+                    },
+                    {
+                      "code": "license",
+                      "name": "License",
+                      "label": "License",
+                      "visible": true,
+                      "dataType": "list",
+                      "editable": true,
+                      "helpText": "Choose the most appropriate Creative Commons License for this Content",
+                      "required": true,
+                      "inputType": "select",
+                      "description": "License For The Content",
+                      "placeholder": "Select License"
+                    },
+                    {
+                      "code": "contentPolicyCheck",
+                      "name": "Content Policy Check",
+                      "visible": true,
+                      "dataType": "boolean",
+                      "editable": false,
+                      "required": true,
+                      "inputType": "checkbox"
+                    }
+                  ],
+                  "resourceTitleLength": "200"
+                },
+                "description": "",
+                "publishedDate": ""
+              },
+              {
+                "id": "ng.sunbird.dashboard",
+                "ver": "1.0",
+                "data": {},
+                "author": "Venkanna Gouda",
+                "compId": "dashboardComp",
+                "config": {},
+                "description": "",
+                "publishedDate": ""
+              }
+            ],
+            "gradeLevel": [
+              "Class 10",
+              "Class 1",
+              "Class 3",
+              "Class 9",
+              "Class 2",
+              "Class 5",
+              "Class 8",
+              "Class 7",
+              "Class 4",
+              "Class 6"
+            ],
+            "collections": [
+              {
+                "id": "do_113108644711645184186",
+                "children": [
+                  {
+                    "id": "do_113108645442945024187",
+                    "allowed_content_types": []
+                  },
+                  {
+                    "id": "do_113108645443067904189",
+                    "allowed_content_types": []
+                  }
+                ],
+                "allowed_content_types": []
+              },
+              {
+                "id": "do_11312258137206784011",
+                "children": [
+                  {
+                    "id": "do_11312258165131673612",
+                    "allowed_content_types": []
+                  },
+                  {
+                    "id": "do_11312258165488025614",
+                    "allowed_content_types": []
+                  }
+                ],
+                "allowed_content_types": []
+              }
+            ],
+            "loginReqired": true,
+            "sharedContext": [
+              "channel",
+              "framework",
+              "board",
+              "medium",
+              "gradeLevel",
+              "subject",
+              "topic"
+            ],
+            "defaultContributeOrgReview": false
+          },
+          "rolemapping": null,
+          "createdby": "5a587cc1-e018-4859-a0a8-e842650b9d64",
+          "updatedby": null,
+          "createdon": "2020-10-15T09:50:51.646Z",
+          "updatedon": "2020-11-09T23:42:52.748Z",
+          "rootorg_id": "01309282781705830427",
+          "sourcing_org_name": "NIT",
+          "channel": "DIKSHA",
+          "template_id": "template1",
+          "guidelines_url": null,
+          "acceptedcontents": null,
+          "rejectedcontents": null,
+          "sourcingrejectedcomments": null
+        }
+      }
+    },
+    {
+      "route": "/api/program/v1/nomination/update",
+      "method": "POST",
+      "returnData": {
+        "id": "api.nomination.update",
+        "ts": "2023-01-30T09:22:14.027Z",
+        "params": {
+          "resmsgid": "950c85b1-a07f-11ed-a249-d1c2d4936c48",
+          "msgid": "950c85b0-a07f-11ed-a249-d1c2d4936c48",
+          "status": "successful",
+          "err": null,
+          "errmsg": null
+        },
+        "responseCode": "OK",
+        "result": {
+          "program_id": "c43f7790-0a2a-11eb-a2e9-4fe29a51bb70",
+          "user_id": "19ba0e4e-9285-4335-8dd0-f674bf03fa4d"
+        }
+      }
+    },
+    {
+      "route": "/api/program/v1/contributor/search",
+      "method": "POST",
+      "returnData": {
+        "id": "api.contributor.search",
+        "ts": "2021-03-18T08:27:48.088Z",
+        "params": {
+          "resmsgid": "d2428781-87c3-11eb-b183-812ff6fd6d0a",
+          "msgid": "d2428780-87c3-11eb-b183-812ff6fd6d0a",
+          "status": "successful",
+          "err": "",
+          "errmsg": ""
+        },
+        "responseCode": "OK",
+        "result": {
+          "description": "This represents the Contributor search success Result",
+          "contributor": [
+            {
+              "lastName": "",
+              "maskedPhone": "",
+              "roles": [
+                "PUBLIC"
+              ],
+              "channel": "15Aug123",
+              "stateValidated": true,
+              "maskedEmail": "15*************@yopmail.com",
+              "id": "ee44960b-a95a-4f23-80dc-7cdacf778081",
+              "identifier": "ee44960b-a95a-4f23-80dc-7cdacf778081",
+              "userName": "15augreviewer48@yopmail.com",
+              "rootOrgId": "013088773085405184115",
+              "userId": "ee44960b-a95a-4f23-80dc-7cdacf778081",
+              "firstName": "15augreviewer48",
+              "emailVerified": true,
+              "status": 1,
+              "name": "15augreviewer48 ",
+              "User": {
+                "lastName": "",
+                "osUpdatedAt": "2020-08-18T13:03:50.175Z",
+                "firstName": "15augreviewer48",
+                "osCreatedAt": "2020-08-18T13:03:50.175Z",
+                "enrolledDate": "2020-08-18T13:03:48.576Z",
+                "@type": "User",
+                "channel": "013088773085405184115",
+                "osid": "4a409368-e6c5-46a1-b8ab-b9fdad5fc8f3",
+                "userId": "ee44960b-a95a-4f23-80dc-7cdacf778081"
+              },
+              "User_Org": {
+                "osUpdatedAt": "2020-08-18T13:53:41.847Z",
+                "osCreatedAt": "2020-08-18T13:53:41.847Z",
+                "@type": "User_Org",
+                "roles": [
+                  "user",
+                  "sourcing_reviewer"
+                ],
+                "osid": "61db4c43-d455-4cf9-91bd-b504d2fc74c0",
+                "userId": "4a409368-e6c5-46a1-b8ab-b9fdad5fc8f3",
+                "orgId": "18180aff-07ba-4f50-bf4a-04ace80f303b"
+              },
+              "selectedRole": "sourcing_reviewer"
+            }
+          ],
+          "count": 1
+        }
+      }
     }
   ]
 }
